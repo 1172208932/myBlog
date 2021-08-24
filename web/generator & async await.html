@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Generator 和 Async 简介 | Hello 晓旭</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="https://img0.baidu.com/it/u=3041595518,152570800&amp;fm=26&amp;fmt=auto&amp;gp=0.jpg">
+    <meta name="description" content="Just Text">
+    
+    <link rel="preload" href="/myBlog/assets/css/0.styles.ee4a6f20.css" as="style"><link rel="preload" href="/myBlog/assets/js/app.3bb51f3d.js" as="script"><link rel="preload" href="/myBlog/assets/js/2.52e7050f.js" as="script"><link rel="preload" href="/myBlog/assets/js/11.731fb223.js" as="script"><link rel="prefetch" href="/myBlog/assets/js/10.9d1c08da.js"><link rel="prefetch" href="/myBlog/assets/js/12.61f02d60.js"><link rel="prefetch" href="/myBlog/assets/js/3.715098d8.js"><link rel="prefetch" href="/myBlog/assets/js/4.2a5d96fc.js"><link rel="prefetch" href="/myBlog/assets/js/5.fd255a4a.js"><link rel="prefetch" href="/myBlog/assets/js/6.66b67ff0.js"><link rel="prefetch" href="/myBlog/assets/js/7.415e4055.js"><link rel="prefetch" href="/myBlog/assets/js/8.3ce0288f.js"><link rel="prefetch" href="/myBlog/assets/js/9.2fbf753e.js">
+    <link rel="stylesheet" href="/myBlog/assets/css/0.styles.ee4a6f20.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myBlog/" class="home-link router-link-active"><img src="https://img0.baidu.com/it/u=3041595518,152570800&amp;fm=26&amp;fmt=auto&amp;gp=0.jpg" alt="Hello 晓旭" class="logo"> <span class="site-name can-hide">Hello 晓旭</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  HOME
+</a></div><div class="nav-item"><a href="/myBlog/web/" class="nav-link router-link-active">
+  WEB
+</a></div><div class="nav-item"><a href="/myBlog/game/" class="nav-link">
+  GAME
+</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  HOME
+</a></div><div class="nav-item"><a href="/myBlog/web/" class="nav-link router-link-active">
+  WEB
+</a></div><div class="nav-item"><a href="/myBlog/game/" class="nav-link">
+  GAME
+</a></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/myBlog/web/PromiseA+规范.html" class="sidebar-link">PromiseA+规范</a></li><li><a href="/myBlog/web/generator &amp; async await.html" class="active sidebar-link">Generator 和 Async 简介</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myBlog/web/generator &amp; async await.html#迭代器-iterator" class="sidebar-link">迭代器 Iterator</a></li><li class="sidebar-sub-header"><a href="/myBlog/web/generator &amp; async await.html#生成器-generator" class="sidebar-link">生成器 Generator</a></li><li class="sidebar-sub-header"><a href="/myBlog/web/generator &amp; async await.html#async-和-await" class="sidebar-link">Async 和 Await</a></li></ul></li><li><a href="/myBlog/web/实现一个Promise.html" class="sidebar-link">一步步实现一个Promise</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="generator-和-async-简介"><a href="#generator-和-async-简介" class="header-anchor">#</a> Generator 和 Async 简介</h1> <p>在讲Generator之前, 咱们要来先了解另外一个概念, 迭代器.</p> <h2 id="迭代器-iterator"><a href="#迭代器-iterator" class="header-anchor">#</a> 迭代器 Iterator</h2> <p>迭代器Iterator 是 ES6 引入的一种新的遍历机制，同时也是一种特殊对象，它具有一些专门为迭代过程设计的专有接口。</p> <p>每个迭代器对象都有一个next()方法，每次调用都返回一个当前结果对象。当前结果对象中有两个属性：</p> <ol><li><p>value：当前属性的值</p></li> <li><p>done：用于判断是否遍历结束，当没有更多可返回的数据时，返回true</p></li></ol> <p>每调用一次next()方法，都会返回下一个可用的值，直到遍历结束。</p> <h2 id="生成器-generator"><a href="#生成器-generator" class="header-anchor">#</a> 生成器 Generator</h2> <p>生成器是一种返回迭代器的函数，通过function关键字后的星号(*)来表示，函数中会用到新的关键字yield。星号可以紧挨着function关键字，也可以在中间添加一个空格.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span><span class="token operator">*</span> <span class="token function">generator</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token keyword">of</span> list<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">yield</span> i<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">let</span> g <span class="token operator">=</span> <span class="token function">generator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>g<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// {value: 1, done: false}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>g<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// {value: 2, done: false}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>g<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// {value: 3, done: false}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>g<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// {value: undefined, done: true}</span>
+</code></pre></div><h3 id="特性"><a href="#特性" class="header-anchor">#</a> 特性</h3> <ol><li>每当执行完一条yield语句后函数就会自动停止执行, 直到再次调用next();</li> <li>yield关键字只可在生成器内部使用，在其他地方使用会导致程序抛出错误;</li> <li>可以通过函数表达式来创建生成器, 但是不能使用箭头函数
+<code>let generator = function *(){}</code></li></ol> <h2 id="async-和-await"><a href="#async-和-await" class="header-anchor">#</a> Async 和 Await</h2> <p>这个就比较简单了, 非常常用, 就不多赘述了.</p> <p>但是同学们想不想知道怎么封装一个函数, 能够让generator自动执行到完毕?</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">longTimeFn</span><span class="token punctuation">(</span><span class="token parameter">time</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token parameter">resolve</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token function">resolve</span><span class="token punctuation">(</span>time<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> time<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">asyncFunc</span><span class="token punctuation">(</span><span class="token parameter">generator</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> iterator <span class="token operator">=</span> <span class="token function">generator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 接下来要执行next</span>
+    <span class="token comment">// data为第一次执行之后的返回结果，用于传给第二次执行</span>
+    <span class="token keyword">const</span> <span class="token function-variable function">next</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> <span class="token punctuation">{</span>
+            value<span class="token punctuation">,</span>
+            done
+        <span class="token punctuation">}</span> <span class="token operator">=</span> iterator<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 第二次执行，并接收第一次的请求结果 value 和 done</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>done<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span> <span class="token comment">// 执行完毕, 直接返回</span>
+        <span class="token comment">// 第一次执行next时，yield返回的 promise实例 赋值给了 value</span>
+        value<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">data</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token function">next</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 当第一次value 执行完毕且成功时，执行下一步(并把第一次的结果传递下一步)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token function">asyncFunc</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token operator">*</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> data <span class="token operator">=</span> <span class="token keyword">yield</span> <span class="token function">longTimeFn</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    data <span class="token operator">=</span> <span class="token keyword">yield</span> <span class="token function">longTimeFn</span><span class="token punctuation">(</span><span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> data<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/myBlog/web/PromiseA+规范.html" class="prev">
+        PromiseA+规范
+      </a></span> <span class="next"><a href="/myBlog/web/实现一个Promise.html">
+        一步步实现一个Promise
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/myBlog/assets/js/app.3bb51f3d.js" defer></script><script src="/myBlog/assets/js/2.52e7050f.js" defer></script><script src="/myBlog/assets/js/11.731fb223.js" defer></script>
+  </body>
+</html>
