@@ -1,7 +1,41 @@
-import { defineUserConfig } from 'vuepress'
-
+import { defineUserConfig, defaultTheme  } from 'vuepress'
+import { viteBundler } from '@vuepress/bundler-vite'
+import { webpackBundler } from '@vuepress/bundler-webpack'
 export default defineUserConfig({
+//   base:'/1/265776/',
   lang: 'zh-CN',
-  title: '你好， VuePress ！',
-  description: '这是我的第一个 VuePress 站点',
+  title: 'newblue web group',
+  description: 'newblue',
+//   head: [
+//     ['base', { href: 'https://ohudong.cztv.com' }]
+//   ],
+  theme: defaultTheme({
+    // 默认主题配置
+    navbar: [
+      {
+        text: '游戏demo',
+        link: '/game',
+      },
+    ],
+    sidebar: {
+        '/game':[
+            {
+                text:'游戏demo',
+                children: [{
+                    text:'新春飞兔',
+                    link:'/demo/flybird.md'
+                }],
+            }
+        ],
+        '/demo/':[
+            {
+                text:'游戏demo',
+                children: [{
+                    text:'新春飞兔',
+                    link:'/demo/flybird.md'
+                }],
+            }
+        ]
+    }
+  }),
 })
