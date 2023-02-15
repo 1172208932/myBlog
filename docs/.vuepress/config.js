@@ -1,6 +1,4 @@
 import { defineUserConfig, defaultTheme } from 'vuepress'
-import { viteBundler } from '@vuepress/bundler-vite'
-import { webpackBundler } from '@vuepress/bundler-webpack'
 export default defineUserConfig({
   base: '/newblue-prerss/',
   lang: 'zh-CN',
