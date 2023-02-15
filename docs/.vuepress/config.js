@@ -1,17 +1,18 @@
-import { defineUserConfig, defaultTheme  } from 'vuepress'
+import { defineUserConfig, defaultTheme } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { webpackBundler } from '@vuepress/bundler-webpack'
 export default defineUserConfig({
-  base:'/newblue-prerss/',
+  base: '/newblue-prerss/',
   lang: 'zh-CN',
   title: 'newblue web group',
   description: 'newblue',
   head: [
-    ['link', { rel: 'icon', href: '/newBlue.png' }] ,
+    ['link', { rel: 'icon', href: '/newblue-prerss/newBlue.png' }],
     // ['base', { href: 'https://ohudong.cztv.com' }]
   ],
   theme: defaultTheme({
-    logo:'/newBlue.png',
+    logo: '/newBlue.png',
+    repo: 'https://github.com/1172208932/newblue-prerss',
     // 默认主题配置
     navbar: [
       {
@@ -24,50 +25,50 @@ export default defineUserConfig({
       }
     ],
     sidebar: {
-        '/game':[
-            {
-                text:'游戏demo',
-                children: [{
-                    text:'新春飞兔',
-                    link:'/demo/flybird.md'
-                }],
-            }
-        ],
-        '/demo/':[
-            {
-                text:'游戏demo',
-                children: [{
-                    text:'新春飞兔',
-                    link:'/demo/flybird.md'
-                }],
-            }
-        ],
-        '/web':[
+      '/game': [
+        {
+          text: '游戏demo',
+          children: [{
+            text: '新春飞兔',
+            link: '/demo/flybird.md'
+          }],
+        }
+      ],
+      '/demo/': [
+        {
+          text: '游戏demo',
+          children: [{
+            text: '新春飞兔',
+            link: '/demo/flybird.md'
+          }],
+        }
+      ],
+      '/web': [
+        {
+          text: '常用包与逻辑',
+          children: [{
+            text: '微信方法',
+            link: '/web/wx-utils.md'
+          },
           {
-            text:'常用包与逻辑',
-            children: [{
-              text:'微信方法',
-              link:'/web/wx-utils.md'
-              },
-              {
-                text:'H5跳转点播',
-                link:'/web/callUpApp.md'
-               },{
-                text:'新蓝网内部Axios二次封装',
-                link:'/web/nb-axios.md'
-               },{
-                text:'微信登录方法',
-                link:'/web/wxpage.md'
-               },{
-                text:'客户端常用方法',
-                link:'/web/cztv-api.md'
-               },{
-                text:'发布订阅通信类',
-                link:'/web/event-bus.md'
-               }
-            ],
+            text: 'H5跳转点播',
+            link: '/web/callUpApp.md'
+          }, {
+            text: '新蓝网内部Axios二次封装',
+            link: '/web/nb-axios.md'
+          }, {
+            text: '微信登录方法',
+            link: '/web/wxpage.md'
+          }, {
+            text: '客户端常用方法',
+            link: '/web/cztv-api.md'
+          }, {
+            text: '发布订阅通信类',
+            link: '/web/event-bus.md'
           }
-        ]
+          ],
+        }
+      ]
     }
   }),
 })
