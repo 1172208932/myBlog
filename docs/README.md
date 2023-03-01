@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: //yun.duiba.com.cn/aurora/assets/9b645f401dbde698763c10d933d3e25c534c1f02.jpeg
+heroImage: /master.jpg
 heroText: Blog
 tagline: 张晓旭的个人博客
 actionText: 快速上手 →
