@@ -1,9 +1,9 @@
 name: docs
 
 on:
-  # 每当 push 到 main 分支时触发部署
+  # 每当 push 到 blog-pages 分支时触发部署
   push:
-    branches: [master]
+    branches: [blog-pages]
   # 手动触发部署
   workflow_dispatch:
 
