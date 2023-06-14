@@ -1,0 +1,84 @@
+{"frames": {
+
+"1.png":
+{
+	"frame": {"x":508,"y":0,"w":563,"h":600},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":563,"h":600},
+	"sourceSize": {"w":563,"h":600}
+},
+"2.png":
+{
+	"frame": {"x":0,"y":0,"w":508,"h":493},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":508,"h":493},
+	"sourceSize": {"w":508,"h":493}
+},
+"3.png":
+{
+	"frame": {"x":0,"y":600,"w":633,"h":466},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":633,"h":466},
+	"sourceSize": {"w":633,"h":466}
+},
+"4.png":
+{
+	"frame": {"x":733,"y":1196,"w":739,"h":433},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":739,"h":433},
+	"sourceSize": {"w":739,"h":433}
+},
+"5.png":
+{
+	"frame": {"x":0,"y":1196,"w":733,"h":443},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":733,"h":443},
+	"sourceSize": {"w":733,"h":443}
+},
+"6.png":
+{
+	"frame": {"x":0,"y":1639,"w":803,"h":386},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":803,"h":386},
+	"sourceSize": {"w":803,"h":386}
+},
+"7.png":
+{
+	"frame": {"x":633,"y":600,"w":698,"h":596},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":698,"h":596},
+	"sourceSize": {"w":698,"h":596}
+},
+"8.png":
+{
+	"frame": {"x":1331,"y":600,"w":710,"h":522},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":710,"h":522},
+	"sourceSize": {"w":710,"h":522}
+},
+"9.png":
+{
+	"frame": {"x":1071,"y":0,"w":607,"h":521},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":607,"h":521},
+	"sourceSize": {"w":607,"h":521}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "flybird.png",
+	"format": "RGBA8888",
+	"size": {"w":2041,"h":2025},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a388074e4b972a4a9e38e93c70952f54:449c554dc5bd61b1e420a9b8579d9fa5:bc2b11a813ffd62dc2d6b2f2fb995515$"
+}
+}

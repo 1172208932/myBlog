@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-e6ef2c9c","path":"/2Ddemo/flybird2.html","title":"flybird","lang":"zh-CN","frontmatter":{},"headers":[{"level":3,"title":"技术栈：","slug":"技术栈","link":"#技术栈","children":[]}],"git":{"updatedTime":1677640843000,"contributors":[{"name":"zhang xiaoxu","email":"1172208932@qq.com","commits":1}]},"filePathRelative":"2Ddemo/flybird2.md"}');export{e as data};

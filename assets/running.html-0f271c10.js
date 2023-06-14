@@ -1,0 +1,2 @@
+import{_ as r,p as t,q as n,R as e,t as a}from"./framework-c4f3d865.js";const i={},o=e("h1",{id:"跑酷类小游戏",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#跑酷类小游戏","aria-hidden":"true"},"#"),a(" 跑酷类小游戏")],-1),s=e("iframe",{id:"iframe",style:{width:"375px",height:"667px",position:"relative",border:"5px solid #3eaf7c"},frameborder:"0",allowfullscreen:"true",src:"../running/index.html"},`  
+ `,-1),c=[o,s];function d(l,_){return t(),n("div",null,c)}const f=r(i,[["render",d],["__file","running.html.vue"]]);export{f as default};

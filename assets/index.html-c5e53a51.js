@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6d9d89c2","path":"/3Ddemo/","title":"3D学习资料","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1677640843000,"contributors":[{"name":"zhang xiaoxu","email":"1172208932@qq.com","commits":1}]},"filePathRelative":"3Ddemo/README.md"}');export{e as data};

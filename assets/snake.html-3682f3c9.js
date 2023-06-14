@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-4fb0e0da","path":"/2Ddemo/snake.html","title":"贪吃蛇小游戏","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1677640843000,"contributors":[{"name":"zhang xiaoxu","email":"1172208932@qq.com","commits":1}]},"filePathRelative":"2Ddemo/snake.md"}');export{e as data};

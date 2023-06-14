@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-28b6fca4","path":"/2Ddemo/flybird.html","title":"Hello fly","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"仓库地址","slug":"仓库地址","link":"#仓库地址","children":[]}],"git":{"updatedTime":1677640843000,"contributors":[{"name":"zhang xiaoxu","email":"1172208932@qq.com","commits":1}]},"filePathRelative":"2Ddemo/flybird.md"}');export{e as data};

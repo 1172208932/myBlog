@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6b85c4f0","path":"/3Ddemo/threejs%E6%A8%A1%E5%9E%8B.html","title":"threejs模型","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1677640843000,"contributors":[{"name":"zhang xiaoxu","email":"1172208932@qq.com","commits":1}]},"filePathRelative":"3Ddemo/threejs模型.md"}');export{e as data};

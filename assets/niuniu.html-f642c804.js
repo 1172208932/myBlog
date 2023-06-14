@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-0f0b0df8","path":"/2Ddemo/niuniu.html","title":"炮台小游戏","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1677640843000,"contributors":[{"name":"zhang xiaoxu","email":"1172208932@qq.com","commits":1}]},"filePathRelative":"2Ddemo/niuniu.md"}');export{t as data};

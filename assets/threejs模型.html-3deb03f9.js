@@ -1,0 +1,2 @@
+import{_ as t,p as r,q as s,R as e,t as a}from"./framework-c4f3d865.js";const o={},c=e("h1",{id:"threejs模型",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#threejs模型","aria-hidden":"true"},"#"),a(" threejs模型")],-1),i=e("iframe",{id:"iframe",style:{width:"375px",height:"667px",position:"relative",border:"5px solid #3eaf7c"},frameborder:"0",allowfullscreen:"true",src:"../threejs/index.html"},`  
+ `,-1),h=[c,i];function n(d,_){return r(),s("div",null,h)}const f=t(o,[["render",n],["__file","threejs模型.html.vue"]]);export{f as default};

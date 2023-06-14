@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-38b74e81","path":"/2Ddemo/","title":"从左侧选择查看更多游戏","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1686706488000,"contributors":[{"name":"zhang xiaoxu","email":"1172208932@qq.com","commits":4}]},"filePathRelative":"2Ddemo/README.md"}');export{e as data};
