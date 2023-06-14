@@ -3,7 +3,10 @@ import { defineUserConfig, defaultTheme } from 'vuepress'
 let navbar2D = [
   {
     text: '2Ddemo',
-    children: [{
+    children: [  {
+      text: '跑酷小游戏',
+      link: '/2Ddemo/running.md'
+    },{
       text: '新春飞兔',
       link: '/2Ddemo/flybird.md'
     },
